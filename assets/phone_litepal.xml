@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="mazak"></dbname>
+    <version value="1.0.1"></version>
+    <list>
+        <mapping class="com.mazak.android.db.gong_si"></mapping>
+        <mapping class="com.mazak.android.db.bu_men"></mapping>
+        <mapping class="com.mazak.sndroid.db.zhi_wei"></mapping>
+    </list>
+    <!-- 
+    <dbname>用于设定数据库的名字，<version>用于设定数据库的版本号，<list>用于设定所有的映射模型 -->
+</litepal>

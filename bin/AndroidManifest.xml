@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mazak1"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <application
+         android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+<!--1 生命代码库 -->
+        <!--
+        由于操作数据库时需要用到Context，而我们显然不希望在每个接口中都去传一遍这个参数，那样操作数据库就显得太繁琐了。因此，LitePal使 
+        用了一个方法来简化掉Context这个参数，只需要在AndroidManifest.xml中配置一下LitePalApplication，所有的数据库操作就都不用再传Context了.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
